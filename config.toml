@@ -1,0 +1,8 @@
+baseURL = "https://trusting-kepler-0a93bf.netlify.com/"
+languageCode = "en-us"
+title = "C-Sharply-Into-Game-Design"
+theme = "reveal-presentation"
+[params]
+description = "Presentation on creative thinking and how it helped me overcome Imposter Syndrome."
+author = "Amos Garner"
+theme = "moon"

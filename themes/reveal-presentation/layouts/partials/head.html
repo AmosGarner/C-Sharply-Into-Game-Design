@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:url" content="{{ .URL | absURL }}" />
+<meta name="twitter:card" content="summary" />
+<meta name="author" content="{{ .Site.Params.Author }}" />
+<title>{{ .Site.Title }}</title>
+<meta property="og:title" content="{{ .Site.Title }}" />
+<meta name="twitter:title" content="{{ .Site.Title | truncate 70 }}" />
+<meta name="description" content="{{ .Site.Params.Description }}">
+{{- with .Site.Params.favicon }}
+<link rel="icon" type="image/x-icon" href="{{ . | absURL }}" />
+{{- end }}
+{{ .Hugo.Generator }}
+
+<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/reveal.css">
+<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/theme/{{ .Site.Params.theme}}.css">
+<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}lib/css/zenburn.css">
+<script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '{{ .Site.BaseURL }}css/print/pdf.css' : '{{ .Site.BaseURL }}css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+</script>

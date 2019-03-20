@@ -1,0 +1,51 @@
+<script src="{{ $.Site.BaseURL }}lib/js/head.min.js"></script>
+<script src="{{ $.Site.BaseURL }}js/reveal.js"></script>
+
+<script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+        dependencies: [{
+                src: '{{ $.Site.BaseURL }}lib/js/classList.js',
+                condition: function () {
+                    return !document.body.classList;
+                }
+            },
+            {
+                src: '{{ $.Site.BaseURL }}plugin/markdown/marked.js',
+                condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            },
+            {
+                src: '{{ $.Site.BaseURL }}plugin/markdown/markdown.js',
+                condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            },
+            {
+                src: '{{ $.Site.BaseURL }}plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            },
+            {
+                src: '{{ $.Site.BaseURL }}plugin/search/search.js',
+                async: true
+            },
+            {
+                src: '{{ $.Site.BaseURL }}plugin/zoom-js/zoom.js',
+                async: true
+            },
+            {
+                src: '{{ $.Site.BaseURL }}plugin/notes/notes.js',
+                async: true
+            }
+        ]
+    });
+</script>
