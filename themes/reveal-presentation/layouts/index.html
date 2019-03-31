@@ -1,265 +1,267 @@
 {{ define "main" }}
-<div class="slides">
-    <section id="Setup">
-        <section id="Title">
-            <div>
-                <h1>C#'ly Into Game Dev</h1>
-                <em>Intro into Game Development With C# &amp; Unity.</em>
-            </div>
-            <a href="/demos/" style="display: block; margin-top: 50px;">Demos List</a>
-        </section>
-        <section id="Terms1">
-            <h2>Terms</h2>
-            <dl>
-                <dt>Game Engine:</dt>
-                <dd>Framework for building games</dd>
-                <dt>Controller</dt>
-                <dd>Handles user input on game entities</dd>
-                <dt>Observer</dt>
-                <dd>Waits for triggered events</dd>
-                <dt>Helper</dt>
-                <dd>Abstracted computational functions for game logic</dd>
-                <dt>Prefab</dt>
-                <dd>Game Entity template for easy instantiation</dd>
-            </dl>
-        </section>
-    </section>
-    <section id="Engine">
-        <section id="EngineTitle">
-            <h1>Game Engines</h1>
-        </section>
-        <section id="GameEngines">
-            <h2>Engines &amp; Games</h2>
-            <div style="display:flex;">
+<div class="reveal">
+    <div class="slides">
+        <section id="Setup">
+            <section id="Title">
                 <div>
-                    <dl style="display:block;">
-                        <dt>Unity</dt>
-                        <dd>Assassin's Creed</dd>
-                        <dd>Kerbal Space Program</dd>
-                    </dl>
-                    <dl style="display:block;margin-top:50px;">
-                        <dt>Unreal</dt>
-                        <dd>Bioshock</dd>
-                        <dd>Borderlands</dd>
-                    </dl>
+                    <h1>C#'ly Into Game Dev</h1>
+                    <em>Intro into Game Development With C# &amp; Unity.</em>
                 </div>
-                <div style="margin-left:50px;">
-                    <dl style="display:block;">
-                        <dt>CryEngine</dt>
-                        <dd>FarCry</dd>
-                        <dd>Kingdom Come</dd>
-                    </dl>
-                    <dl style="display:block;margin-top:50px;">
-                        <dt>R.A.G.E</dt>
-                        <dd>GTA</dd>
-                        <dd>Red Dead</dd>
-                    </dl>
+                <a href="/demos/" style="display: block; margin-top: 50px;">Demos List</a>
+            </section>
+            <section id="Terms1">
+                <h2>Terms</h2>
+                <dl>
+                    <dt>Game Engine:</dt>
+                    <dd>Framework for building games</dd>
+                    <dt>Controller</dt>
+                    <dd>Handles user input on game entities</dd>
+                    <dt>Observer</dt>
+                    <dd>Waits for triggered events</dd>
+                    <dt>Helper</dt>
+                    <dd>Abstracted computational functions for game logic</dd>
+                    <dt>Prefab</dt>
+                    <dd>Game Entity template for easy instantiation</dd>
+                </dl>
+            </section>
+        </section>
+        <section id="Engine">
+            <section id="EngineTitle">
+                <h1>Game Engines</h1>
+            </section>
+            <section id="GameEngines">
+                <h2>Engines &amp; Games</h2>
+                <div style="display:flex;">
+                    <div>
+                        <dl style="display:block;">
+                            <dt>Unity</dt>
+                            <dd>Assassin's Creed</dd>
+                            <dd>Kerbal Space Program</dd>
+                        </dl>
+                        <dl style="display:block;margin-top:50px;">
+                            <dt>Unreal</dt>
+                            <dd>Bioshock</dd>
+                            <dd>Borderlands</dd>
+                        </dl>
+                    </div>
+                    <div style="margin-left:50px;">
+                        <dl style="display:block;">
+                            <dt>CryEngine</dt>
+                            <dd>FarCry</dd>
+                            <dd>Kingdom Come</dd>
+                        </dl>
+                        <dl style="display:block;margin-top:50px;">
+                            <dt>R.A.G.E</dt>
+                            <dd>GTA</dd>
+                            <dd>Red Dead</dd>
+                        </dl>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section id="WhatEnginesDoForUs">
-            <h2>What Engines Do For Us</h2>
-            <em>Software that allows game creators to build games quickly and efficiently.</em>
-            <h5 style="margin-top:50px;">Features:</h5>
-            <div style="display: flex;">
-                <div style="width:50%">
-                    <ul>
-                        <li>Audio</li>
-                        <li>Graphics / Particles</li>
-                        <li>Networking</li>
-                    </ul>
+            </section>
+            <section id="WhatEnginesDoForUs">
+                <h2>What Engines Do For Us</h2>
+                <em>Software that allows game creators to build games quickly and efficiently.</em>
+                <h5 style="margin-top:50px;">Features:</h5>
+                <div style="display: flex;">
+                    <div style="width:50%">
+                        <ul>
+                            <li>Audio</li>
+                            <li>Graphics / Particles</li>
+                            <li>Networking</li>
+                        </ul>
+                    </div>
+                    <div style="width:50%">
+                        <ul>
+                            <li>Physics / Collisions</li>
+                            <li>UI</li>
+                            <li>Scripting / Data IO</li>
+                        </ul>
+                    </div>
                 </div>
-                <div style="width:50%">
-                    <ul>
-                        <li>Physics / Collisions</li>
-                        <li>UI</li>
-                        <li>Scripting / Data IO</li>
-                    </ul>
+            </section>
+            <section id="UnityVsUnreal">
+                <h2>Unity V.s. Unreal</h2>
+                <div style="display: flex">
+                    <div style="width:33%;">
+                        <h5>Pricing</h5>
+                        <dl>
+                            <dt>Unity</dt>
+                            <dd>Free**</dd>
+                            <dt>Unreal</dt>
+                            <dd>5% Royalty</dd>
+                        </dl>
+                    </div>
+                    <div style="width:23%;">
+                        <h5>Scripting</h5>
+                        <dl>
+                            <dt>Unity</dt>
+                            <dd>C# </dd>
+                            <dt>Unreal</dt>
+                            <dd>C++</dd>
+                        </dl>
+                    </div>
+                    <div style="width:43%;">
+                        <h5>Community</h5>
+                        <dl>
+                            <dt>Unreal</dt>
+                            <dd>Bigger &amp; older '98</dd>
+                            <dt>Unity</dt>
+                            <dd>Indie Fan Base</dd>
+                        </dl>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section id="UnityVsUnreal">
-            <h2>Unity V.s. Unreal</h2>
-            <div style="display: flex">
-                <div style="width:33%;">
-                    <h5>Pricing</h5>
-                    <dl>
-                        <dt>Unity</dt>
-                        <dd>Free**</dd>
-                        <dt>Unreal</dt>
-                        <dd>5% Royalty</dd>
-                    </dl>
+            </section>
+            <section id="UnityVSUnreal2">
+                <h2>Visual Comparisons</h2>
+                <div style="display:flex; width: 125%;">
+                    <div style="display:flex; width:50%; flex-direction:column;">
+                        <div style="width:50%"><img src="/images/Unity_Unreal_1.png" alt=""></div>
+                        <div style="width:50%"><img src="/images/Unity_Unreal_2.png" alt=""></div>
+                    </div>
+                    <div style="width:50%">
+                        <img src="/images/Unity_Unreal_3.png" alt="">
+                    </div>
                 </div>
-                <div style="width:23%;">
-                    <h5>Scripting</h5>
-                    <dl>
-                        <dt>Unity</dt>
-                        <dd>C# </dd>
-                        <dt>Unreal</dt>
-                        <dd>C++</dd>
-                    </dl>
+                <p>Unity: Softer Lighting, more performant**</p>
+                <p>Unreal: Realistic, Similar Look &amp; Feel</p>
+            </section>
+            <section id="UnityCallouts">
+                <h2>My Feelings on Unity</h2>
+                <div style="display: flex">
+                    <div style="width: 50%">
+                        <ul>
+                            Pros
+                            <li>C#, woot!</li>
+                            <li>Pro-learning community</li>
+                            <li>Easy to prototype</li>
+                            <li>Asset store is legit</li>
+                        </ul>
+                    </div>
+                    <div style="width: 50%">
+                        <ul>
+                            Cons
+                            <li>Overwhelming</li>
+                            <li>Light Theme by default</li>
+                            <li>Assets are hit and miss</li>
+                        </ul>
+                    </div>
                 </div>
-                <div style="width:43%;">
-                    <h5>Community</h5>
-                    <dl>
-                        <dt>Unreal</dt>
-                        <dd>Bigger &amp; older '98</dd>
-                        <dt>Unity</dt>
-                        <dd>Indie Fan Base</dd>
-                    </dl>
+                <img src="/images/eyes.jpg" alt="" width="250px;" height="250x;">
+            </section>
+        </section>
+        <section id="UnityEngine">
+            <section id="UnityTitle">
+                <h1>Getting To Know Unity</h1>
+            </section>
+            <section id="UserInterface">
+                <h2>The User Interface</h2>
+                <img src="/images/UI.jpg" alt="" width="700" height="400">
+                <div style="font-size: 20px;">
+                    <p>
+                        <strong>A</strong>: Object Hierarchy |
+                        <strong>B</strong>: Scene Display |
+                        <strong>C</strong>: Object Inspector
+                    </p>
+                    <p>
+                        <strong>D</strong>: File Hierarchy |
+                        <strong>E</strong>: Game Display (Camera) |
+                        <strong>F</strong>: Console Log
+                    </p>
                 </div>
-            </div>
-        </section>
-        <section id="UnityVSUnreal2">
-            <h2>Visual Comparisons</h2>
-            <div style="display:flex; width: 125%;">
-                <div style="display:flex; width:50%; flex-direction:column;">
-                    <div style="width:50%"><img src="/images/Unity_Unreal_1.png" alt=""></div>
-                    <div style="width:50%"><img src="/images/Unity_Unreal_2.png" alt=""></div>
+            </section>
+            <section id="Assets">
+                <h2>Assetts</h2>
+                <ul>
+                    <li>Files in your project's asset directory</li>
+                </ul>
+                <ul>
+                    <li>Images: .png, .jpg, .svg</li>
+                    <li>Audio: .mp3, .oqq, .wav</li>
+                    <li>Video: .ogv, .vp8, .webm</li>
+                    <li>Data: .xml, .json, .csv</li>
+                </ul>
+                <img src="/images/Assets.png" alt="">
+            </section>
+            <section id="Scenes">
+                <h2>Scenes</h2>
+                <ul>
+                    <li>Scenes are individual levels in a game</li>
+                    <li>Instantiated Game Entities</li>
+                    <li>Data is lost when tranferring between scenes**</li>
+                    <li>Saved as indivual files in a unity project</li>
+                </ul>
+                <h5 style="margin-top:50px;">Components</h5>
+                <dl style="font-size: 30px;">
+                    <dt>Scene Manager</dt>
+                    <dd>Controller for transferring between scenes</dd>
+                </dl>
+            </section>
+            <section id="BuildGame">
+                <h2>Building Your First Game</h2>
+                <div>
+                    <ol>
+                        <li>Start a New Unity Project</li>
+                        <li>Save the Scene</li>
+                        <li>File -> Build</li>
+                        <li>Add Your Scenes</li>
+                        <li>Choose Your Platform</li>
+                        <li>Build</li>
+                    </ol>
                 </div>
-                <div style="width:50%">
-                    <img src="/images/Unity_Unreal_3.png" alt="">
-                </div>
-            </div>
-            <p>Unity: Softer Lighting, more performant**</p>
-            <p>Unreal: Realistic, Similar Look &amp; Feel</p>
+                <a href="/demos/myfirstbuild/">Demo</a>
+            </section>
         </section>
-        <section id="UnityCallouts">
-            <h2>My Feelings on Unity</h2>
-            <div style="display: flex">
-                <div style="width: 50%">
-                    <ul>
-                        Pros
-                        <li>C#, woot!</li>
-                        <li>Pro-learning community</li>
-                        <li>Easy to prototype</li>
-                        <li>Asset store is legit</li>
-                    </ul>
-                </div>
-                <div style="width: 50%">
-                    <ul>
-                        Cons
-                        <li>Overwhelming</li>
-                        <li>Light Theme by default</li>
-                        <li>Assets are hit and miss</li>
-                    </ul>
-                </div>
-            </div>
-            <img src="/images/eyes.jpg" alt="" width="250px;" height="250x;">
+        <section id="Programming">
+            <section id="ProgrammingTitle">
+                <h1>Game Programming</h1>
+            </section>
+            <section id="MonoBehaviour">
+                <h2>MonoBehaviour</h2>
+                <dl>
+                    <dt>Start</dt>
+                    <dt>Update</dt>
+                    <dt>Fixed Update</dt>
+                    <dt>OnEnable / Disable</dt>
+                </dl>
+            </section>
+            <section id="Controllers">
+                <h2>Controllers</h2>
+            </section>
+            <section id="Observers">
+                <h2>Observers</h2>
+            </section>
+            <section id="Collisions">
+                <h2>Collision Handeling</h2>
+            </section>
+            <section id="AI">
+                <h2>Artificial Intelligence</h2>
+            </section>
         </section>
-    </section>
-    <section id="UnityEngine">
-        <section id="UnityTitle">
-            <h1>Getting To Know Unity</h1>
+        <section id="GameDesign">
+            <section id="DesignTitle">
+                <h1>Game Design</h1>
+            </section>
+            <section id="GameArt">
+                <h2>Game Art</h2>
+            </section>
+            <section id="GameAudio">
+                <h2>Game Audio</h2>
+            </section>
+            <section id="PostProcessing">
+                <h2>Post Processing</h2>
+            </section>
         </section>
-        <section id="UserInterface">
-            <h2>The User Interface</h2>
-            <img src="/images/UI.jpg" alt="" width="700" height="400">
-            <div style="font-size: 20px;">
-                <p>
-                    <strong>A</strong>: Object Hierarchy |
-                    <strong>B</strong>: Scene Display |
-                    <strong>C</strong>: Object Inspector
-                </p>
-                <p>
-                    <strong>D</strong>: File Hierarchy |
-                    <strong>E</strong>: Game Display (Camera) |
-                    <strong>F</strong>: Console Log
-                </p>
-            </div>
+        <section id="Conclusion">
+            <section id="Game">
+                <h2>Finished Product</h2>
+            </section>
+            <section id="Questions">
+                <h2>Any Questions</h2>
+            </section>
+            <section id="Contact">
+                <h2>Contact & Slides Info</h2>
+            </section>
         </section>
-        <section id="Assets">
-            <h2>Assetts</h2>
-            <ul>
-                <li>Files in your project's asset directory</li>
-            </ul>
-            <ul>
-                <li>Images: .png, .jpg, .svg</li>
-                <li>Audio: .mp3, .oqq, .wav</li>
-                <li>Video: .ogv, .vp8, .webm</li>
-                <li>Data: .xml, .json, .csv</li>
-            </ul>
-            <img src="/images/Assets.png" alt="">
-        </section>
-        <section id="Scenes">
-            <h2>Scenes</h2>
-            <ul>
-                <li>Scenes are individual levels in a game</li>
-                <li>Instantiated Game Entities</li>
-                <li>Data is lost when tranferring between scenes**</li>
-                <li>Saved as indivual files in a unity project</li>
-            </ul>
-            <h5 style="margin-top:50px;">Components</h5>
-            <dl style="font-size: 30px;">
-                <dt>Scene Manager</dt>
-                <dd>Controller for transferring between scenes</dd>
-            </dl>
-        </section>
-        <section id="BuildGame">
-            <h2>Building Your First Game</h2>
-            <div>
-                <ol>
-                    <li>Start a New Unity Project</li>
-                    <li>Save the Scene</li>
-                    <li>File -> Build</li>
-                    <li>Add Your Scenes</li>
-                    <li>Choose Your Platform</li>
-                    <li>Build</li>
-                </ol>
-            </div>
-            <a href="/demos/myfirstbuild/">Demo</a>
-        </section>
-    </section>
-    <section id="Programming">
-        <section id="ProgrammingTitle">
-            <h1>Game Programming</h1>
-        </section>
-        <section id="MonoBehaviour">
-            <h2>MonoBehaviour</h2>
-            <dl>
-                <dt>Start</dt>
-                <dt>Update</dt>
-                <dt>Fixed Update</dt>
-                <dt>OnEnable / Disable</dt>
-            </dl>
-        </section>
-        <section id="Controllers">
-            <h2>Controllers</h2>
-        </section>
-        <section id="Observers">
-            <h2>Observers</h2>
-        </section>
-        <section id="Collisions">
-            <h2>Collision Handeling</h2>
-        </section>
-        <section id="AI">
-            <h2>Artificial Intelligence</h2>
-        </section>
-    </section>
-    <section id="GameDesign">
-        <section id="DesignTitle">
-            <h1>Game Design</h1>
-        </section>
-        <section id="GameArt">
-            <h2>Game Art</h2>
-        </section>
-        <section id="GameAudio">
-            <h2>Game Audio</h2>
-        </section>
-        <section id="PostProcessing">
-            <h2>Post Processing</h2>
-        </section>
-    </section>
-    <section id="Conclusion">
-        <section id="Game">
-            <h2>Finished Product</h2>
-        </section>
-        <section id="Questions">
-            <h2>Any Questions</h2>
-        </section>
-        <section id="Contact">
-            <h2>Contact & Slides Info</h2>
-        </section>
-    </section>
+    </div>
 </div>
 {{ end }}

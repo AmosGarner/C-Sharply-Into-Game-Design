@@ -430,7 +430,7 @@ body {
 /*********************************************
  * PROGRESS BAR
  *********************************************/
-.reveal .progress {
+.reveal .rprogress {
   position: absolute;
   display: none;
   height: 3px;
@@ -441,7 +441,7 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff; }
 
-.reveal .progress:after {
+.reveal .rprogress:after {
   content: '';
   display: block;
   position: absolute;
@@ -449,7 +449,7 @@ body {
   width: 100%;
   top: -10px; }
 
-.reveal .progress span {
+.reveal .rprogress span {
   display: block;
   height: 100%;
   width: 0px;
@@ -999,7 +999,7 @@ body {
   text-align: center; }
 
 .no-transforms .reveal .controls,
-.no-transforms .reveal .progress {
+.no-transforms .reveal .rprogress {
   display: none !important; }
 
 .no-transforms .reveal .slides section {
@@ -1277,7 +1277,7 @@ body {
 .reveal.rtl ul {
   text-align: right; }
 
-.reveal.rtl .progress span {
+.reveal.rtl .rprogress span {
   float: right; }
 
 /*********************************************
@@ -1580,7 +1580,7 @@ body {
   -webkit-backface-visibility: visible !important;
           backface-visibility: visible !important; }
 
-.zoomed .reveal .progress,
+.zoomed .reveal .rprogress,
 .zoomed .reveal .controls {
   opacity: 0; }
 

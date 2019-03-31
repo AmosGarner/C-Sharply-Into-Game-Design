@@ -1,13 +1,10 @@
 {{ define "main" }}
     <div class="reveal" style="text-align: center;">
-        <div style="">
-            <h3>{{  .Params.Title }}</h3>
-        </div>
-        <div style="width:80%; margin: 0 auto;">
-            {{ partial "game.html" }}
-        </div>
-        <div style="margin-top: 50px;">
-            <a href="/#{{ .Params.Back }}">Back To Presentation</a>
+        <div class="slides">
+            <section>
+                {{ partial "game.html" .}}
+            </section>
         </div>
     </div>
+    
 {{ end }}

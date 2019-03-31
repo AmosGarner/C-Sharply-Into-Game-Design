@@ -574,7 +574,7 @@
 		dom.background = createSingletonNode( dom.wrapper, 'div', 'backgrounds', null );
 
 		// Progress bar
-		dom.progress = createSingletonNode( dom.wrapper, 'div', 'progress', '<span></span>' );
+		dom.progress = createSingletonNode( dom.wrapper, 'div', 'rprogress', '<span></span>' );
 		dom.progressbar = dom.progress.querySelector( 'span' );
 
 		// Arrow controls
