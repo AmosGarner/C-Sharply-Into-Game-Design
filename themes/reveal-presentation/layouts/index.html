@@ -10,7 +10,7 @@
                 <a href="/demos/" style="display: block; margin-top: 50px;">Demos List</a>
             </section>
             <section id="Terms1">
-                <h2>Terms</h2>
+                <h2>Terms: (1/2)</h2>
                 <dl>
                     <dt>Game Engine:</dt>
                     <dd>Framework for building games</dd>
@@ -18,10 +18,17 @@
                     <dd>Handles user input on game entities</dd>
                     <dt>Observer</dt>
                     <dd>Waits for triggered events</dd>
+                </dl>
+            </section>
+            <section id="Terms2">
+                <h2>Terms: (2/2)</h2>
+                <dl>
                     <dt>Helper</dt>
                     <dd>Abstracted computational functions for game logic</dd>
                     <dt>Prefab</dt>
                     <dd>Game Entity template for easy instantiation</dd>
+                    <dt>Rigidbody</dt>
+                    <dd>Component that gives an Entity Physics</dd>
                 </dl>
             </section>
         </section>
@@ -230,12 +237,12 @@
             </section>
             <section id="Controllers">
                 <h2>Controllers</h2>
-                <em>The game's steering wheel</em>
+                <em>The game's steering wheel (Direct Influence)</em>
                 <div style="display: flex;">
                     <div style="width: 50%;">
                         <ul>
                             <u>Responsibilities</u>
-                            <li>Player Input</li>
+                            <li>State Managment</li>
                             <li>Fire Game Events</li>
                             <li>Entity Specific Actions</li>
                             <li>Entity Data I/O</li>
@@ -254,17 +261,23 @@
             </section>
             <section id="Observers">
                 <h2>Observers</h2>
+                <em>The game's speedometer (Indirect Influence)</em>
                 <div style="display: flex;">
                     <div style="width: 50%;">
                         <ul>
-                            Responsibilities
-                            <li></li>
+                            <u>Responsibilities</u>
+                            <li>Event Listening</li>
+                            <li>Data Handeling</li>
+                            <li>State Flow</li>
                         </ul>
                     </div>
                     <div style="width: 50%;">
                         <ul>
-                            Examples:
-                            <li></li>
+                            <u>Examples</u>
+                            <li>Game Manager (Pattern)</li>
+                            <li>Score Keeper</li>
+                            <li>UI Handler</li>
+                            <li>Scene Manager</li>
                         </ul>
                     </div>
                 </div>
@@ -275,14 +288,18 @@
                 <div style="display: flex;">
                     <div style="width: 50%;">
                         <ul>
-                            Responsibilities
-                            <li></li>
+                            <u>Triggers</u>
+                            <li>No physics required</li>
+                            <li>Doors and buttons</li>
+                            <li>Boolean value</li>
                         </ul>
                     </div>
                     <div style="width: 50%;">
                         <ul>
-                            Examples:
-                            <li></li>
+                            <u>Collisions</u>
+                            <li>Physics required</li>
+                            <li>Effects rigidBody</li>
+                            <li>Preformance impacted</li>
                         </ul>
                     </div>
                 </div>
