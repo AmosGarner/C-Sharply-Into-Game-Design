@@ -1,6 +1,6 @@
 {
 "companyName": "A. Gamer Studios",
-"productName": "Pong: My First Build",
+"productName": "Pong",
 "dataUrl": "data/MyFirstBuild.data.unityweb",
 "wasmCodeUrl": "data/MyFirstBuild.wasm.code.unityweb",
 "wasmFrameworkUrl": "data/MyFirstBuild.wasm.framework.unityweb",

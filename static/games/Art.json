@@ -1,0 +1,13 @@
+{
+"companyName": "A. Gamer Studios",
+"productName": "Pong",
+"dataUrl": "data/Art.data.unityweb",
+"wasmCodeUrl": "data/Art.wasm.code.unityweb",
+"wasmFrameworkUrl": "data/Art.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"}
+}
