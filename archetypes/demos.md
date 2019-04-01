@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-draft: true
+draft: false
 game: "Pong"
 back: "BuildGame"
 data: "/games/MyFirstBuild.json"
