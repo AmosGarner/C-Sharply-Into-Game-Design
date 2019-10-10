@@ -5,4 +5,4 @@ theme = "reveal-presentation"
 [params]
 description = "Presentation on creative thinking and how it helped me overcome Imposter Syndrome."
 author = "Amos Garner"
-theme = "moon"
+theme = "solarized"
